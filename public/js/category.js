@@ -20,9 +20,6 @@ $(document).ready(function() {
   // Call ajax to retrieve the list of category
   loadCategories();
 
-
-
-
   // Form Create Product
   $('.form-create').submit(function(event){
       //event.preventDefault();
@@ -60,7 +57,7 @@ $(document).ready(function() {
         loadProducts();
         // Show result
         classMsg += " "+ $('.error-create-product').attr('class');
-        $('.error-create-product').addClass (classMsg);
+        $('.error-create-product').addClass(classMsg);
         $('.error-create-product').html(msg);
         // reset form
         $('.form-create')[0].reset();
