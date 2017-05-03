@@ -12,30 +12,13 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-
+    <link rel="stylesheet" href="{{ asset('css/product.css') }}">
     <!-- Scripts -->
     <script>
         window.Laravel = {!! json_encode([
             'csrfToken' => csrf_token(),
         ]) !!};
     </script>
-    <style media="screen">
-      .container {
-        margin-right: 50px;
-        margin-left: 50px;
-      }
-      @media (min-width: 1200px) {
-        .container {
-            width: 1240px;
-        }
-      }
-      .even-tr {
-        background-color: rgba(203, 219, 247, 0.2);
-      }
-      .tbody-product tr > td:nth-child(2){
-        max-width: 400px;
-      }
-    </style>
 </head>
 <body>
     <div id="app">
@@ -108,6 +91,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!-- jQuery Template -->
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.js"></script>
     @yield('scripts')
 </body>
 </html>

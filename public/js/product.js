@@ -1,3 +1,7 @@
+/**
+ * [loadProducts load all products from server]
+ * @return {[void]}
+ */
 function loadProducts() {
   $.ajax({
       url: 'http://web-api.dev/api/products',
@@ -30,6 +34,31 @@ function loadProducts() {
       }
   });
 }
+/**
+ * [templateLoadProducts function using jQuery Template to render data]
+ * @return {[void]}
+ */
+function templateLoadProducts() {
+  // Using ajax to retrieve data from server
+  $.ajax({
+    url : "http://web-api.dev/api/products",
+    dataType: "json",
+    success: function(response) {
+      console.log(response);
+      var pros = [];
+      for (i=0;i<response.products.length;i++) {
+        pros[i] = response.products[i];
+        pros[i]['index'] = i+1;
+      }
+      // Render the products using template
+      $("#productsTemplate").tmpl(pros).appendTo("#tbody-product");
+    }
+  });
+}
+/**
+ * [load script]
+ * @return {[void]}
+ */
 $(document).ready(function() {
-  loadProducts();
+  templateLoadProducts();
 });
