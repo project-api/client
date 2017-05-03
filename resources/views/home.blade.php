@@ -18,7 +18,7 @@
                             <th colspan="3" style="text-align: center; width: 180px;">Features</th>
                           </tr>
                         </thead>
-                        <tbody id="tbody-product">
+                        <tbody id="tbody-product" class="tbody-product">
                         </tbody>
                         </table>
                       </div>
