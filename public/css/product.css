@@ -1,0 +1,32 @@
+.container {
+  margin-right: 50px;
+  margin-left: 50px;
+}
+@media (min-width: 1200px) {
+  .container {
+      width: 1240px;
+  }
+}
+.even-tr {
+  background-color: rgba(203, 219, 247, 0.2);
+}
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th{
+  vertical-align: middle;
+}
+.tbody-product tr > td:nth-child(2){
+  max-width: 400px;
+}
+.tbody-product tr > td:last-child {
+  width: 170px;
+}
+.tbody-product .btn-default {
+  margin-right: 5px;
+}
+.tbody-product .btn-default > img {
+  width: 24px;
+}
