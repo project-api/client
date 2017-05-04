@@ -2,8 +2,7 @@
 
 @section('content')
   <div class="container">
-      <div class="row">
-
+      <!-- <div class="row">
         <!-- Dislay all products -->
         <div class="col-md-8">
             <div class="panel panel-default">
@@ -70,14 +69,19 @@
                </div>
              </div>
          </div>
-      </div>
+      </div> -->
+      <p>hello</p>
   </div>
 
 @stop
 
 @section('scripts')
-<!-- <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.4.4.js"></script>
-<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.js"></script> -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- <script src="http://code.jquery.com/jquery-latest.min.js"></script> -->
+
+<!-- jQuery Template -->
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.js"></script>
 <script type="text/javascript" src="{{ asset('js/product.js') }}"></script>
 <script src="{{ asset('js/category.js') }}" charset="utf-8"></script>
 
