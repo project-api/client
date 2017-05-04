@@ -54,6 +54,7 @@ $(document).ready(function() {
           msg = "Create Failed";
           classMsg = "alert-danger";
         }
+        $("#tbody-product").empty();
         templateLoadProducts();
         // Show result
         classMsg += " "+ $('.error-create-product').attr('class');
@@ -63,6 +64,6 @@ $(document).ready(function() {
         $('.form-create')[0].reset();
       });
       event.preventDefault();
-      templateLoadProducts();
+      //templateLoadProducts();
   });
 });
