@@ -3,28 +3,6 @@
 @section('content')
   <div class="container">
       <div class="row">
-<<<<<<< HEAD
-          <div class="col-md-8">
-              <div class="panel panel-default">
-                  <div class="panel-heading">Products</div>
-                  <div class="panel-body">
-                    <div class="table-responsive">
-                      <table class="table table-product">
-                        <thead>
-                          <tr>
-                            <th>#</th>
-                            <th>Name</th>
-                            <th>Price</th>
-                            <th>Quatity</th>
-                            <th colspan="3" style="text-align: center; width: 180px;">Features</th>
-                          </tr>
-                        </thead>
-                        <tbody id="tbody-product" class="tbody-product">
-                        </tbody>
-                        </table>
-                      </div>
-=======
-
         <!-- Dislay all products -->
         <div class="col-md-8">
             <div class="panel panel-default">
@@ -44,7 +22,6 @@
                       <tbody id="tbody-product" class="tbody-product">
                       </tbody>
                       </table>
->>>>>>> feature/product
                     </div>
                   </div>
             </div>
